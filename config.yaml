@@ -1,0 +1,25 @@
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  test_path: "data/test"
+  
+model:
+  input_dim: 64           # Размерность входных признаков
+  hidden_dim: 128         # Размерность скрытого слоя
+  output_dim: 1           # Выход (0/1 - есть ошибка или нет)
+  batch_size: 32
+  epochs: 100
+  lr: 0.001
+  model_save_path: "models/graphsage_model.pth"
+  
+components:
+  # Определение типов компонентов и их признаков
+  resistor:
+    features: [resistance, power, tolerance]
+  capacitor:
+    features: [capacitance, voltage, type]
+  # ... другие компоненты
+
+connections:
+  # Типы соединений
+  types: [wire, bus, wireless]
