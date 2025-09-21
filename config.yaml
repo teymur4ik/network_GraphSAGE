@@ -1,25 +1,126 @@
+# === Основные параметры данных ===
 data:
-  raw_path: "data/raw"
-  processed_path: "data/processed"
-  test_path: "data/test"
-  
-model:
-  input_dim: 64           # Размерность входных признаков
-  hidden_dim: 128         # Размерность скрытого слоя
-  output_dim: 1           # Выход (0/1 - есть ошибка или нет)
-  batch_size: 32
-  epochs: 100
-  lr: 0.001
-  model_save_path: "models/graphsage_model.pth"
-  
-components:
-  # Определение типов компонентов и их признаков
-  resistor:
-    features: [resistance, power, tolerance]
-  capacitor:
-    features: [capacitance, voltage, type]
-  # ... другие компоненты
+  raw_path: "data/raw"                  # Папка с исходными SVG-схемами
+  processed_path: "data/processed"      # Папка для обработанных графов (.graph)
+  test_path: "data/test"                # Папка для тестовых схем
+  train_ratio: 0.8                      # Доля данных для обучения
+  val_ratio: 0.1                        # Доля для валидации
+  test_ratio: 0.1                       # Доля для тестирования
+  max_graph_size: 500                   # Максимальное количество узлов в графе
 
+# === Параметры модели GraphSAGE ===
+model:
+  # Архитектура
+  input_dim: 64                         # Размерность входных признаков
+  hidden_dim: 128                       # Размер скрытых слоев
+  output_dim: 1                         # Выход (бинарная классификация)
+  num_layers: 3                         # Количество слоев GraphSAGE
+  dropout: 0.3                          # Dropout для регуляризации
+  aggregator: "mean"                    # Тип агрегатора (mean, max, lstm)
+  
+  # Обучение
+  batch_size: 32                        # Размер батча
+  epochs: 150                           # Количество эпох
+  lr: 0.001                             # Learning Rate
+  weight_decay: 1e-5                    # L2-регуляризация
+  early_stopping_patience: 20           # Ранняя остановка после N эпох без улучшений
+  
+  # Сохранение
+  model_save_path: "models/graphsage"   # Префикс для сохранения моделей
+  best_model_metric: "val_f1"           # Метрика для выбора лучшей модели (val_loss/val_f1/val_auc)
+
+# === Компоненты схем электроосвещения ===
+components:
+  # Лампы
+  lamp:
+    features: [voltage, power, is_led, is_dimmable, base_type]
+    rules:
+      min_voltage: 12                   # Минимальное напряжение (В)
+      max_power: 200                    # Максимальная мощность (Вт)
+      allowed_base_types: [e27, e14, gu10]
+
+  # Выключатели
+  switch:
+    features: [current, is_dimmer, poles, is_smart]
+    rules:
+      max_current: 10                   # Максимальный ток (А)
+      max_poles: 3                      # Максимальное количество полюсов
+
+  # Автоматы защиты
+  circuit_breaker:
+    features: [rated_current, tripping_current, poles]
+    rules:
+      min_current: 1                    # Минимальный ток (А)
+      max_current: 63
+
+  # Розетки
+  socket:
+    features: [voltage, current, type, is_grounded]
+    rules:
+      allowed_types: [schuko, bs1363, nema5-15]
+      max_current: 16
+
+  # Датчики
+  sensor:
+    features: [voltage, type, is_motion, range]
+    rules:
+      allowed_types: [motion, light, humidity]
+
+# === Параметры соединений ===
 connections:
-  # Типы соединений
-  types: [wire, bus, wireless]
+  types: [wire, bus, terminal, wireless] # Типы соединений
+  features: [length, type, is_grounded, is_shielded] # Признаки
+  rules:
+    max_length: 10.0                    # Максимальная длина (м)
+    min_wire_crosssection: 1.5          # Минимальное сечение (мм²)
+    max_wire_resistance: 0.1            # Максимальное сопротивление (Ом/м)
+
+# === Параметры SVG-парсинга ===
+svg_processing:
+  # Классы элементов SVG
+  classes:
+    component: "electro-component"      # Класс для компонентов
+    connection: "connection-line"       # Класс для соединений
+    text_label: "component-label"       # Класс для текстовых меток
+  
+  # Полярность
+  polarity_markers: [".polarity-plus", ".polarity-minus"]
+  
+  # Важные атрибуты
+  key_attributes:
+    - "data-voltage"
+    - "data-current"
+    - "data-type"
+    - "data-length"
+
+# === Логирование и мониторинг ===
+logging:
+  tensorboard_dir: "logs/tensorboard"   # Папка для логов TensorBoard
+  wandb_project: "electro-scheme-ai"    # Проект Weights & Biases
+  log_interval: 10                      # Частота логирования (шагов)
+  metrics:
+    train: [loss, accuracy, f1]
+    val: [loss, accuracy, f1, auc]
+
+# === Параметры предобработки ===
+preprocessing:
+  # Нормализация
+  feature_scaling:
+    method: "minmax"                    # minmax/standard
+    voltage_range: [0, 400]             # Нормировка напряжения (В)
+    power_range: [0, 1000]              # Нормировка мощности (Вт)
+  
+  # Векторизация
+  vectorizer:
+    embedding_dim: 64                   # Размерность embeddings для категорий
+    ohe_threshold: 10                   # Порог для One-Hot Encoding
+
+# === Параметры тестирования ===
+testing:
+  error_threshold: 0.65                 # Порог вероятности для детекции ошибок
+  report_types:                         # Типы ошибок для отчета
+    - "short_circuit"
+    - "open_circuit"
+    - "overload"
+    - "wrong_connection"
+  visual_debug: True                    # Генерация отладочных визуализаций

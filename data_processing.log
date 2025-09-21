@@ -1,0 +1,134 @@
+2025-08-04 17:51:16,748 - INFO - === Запуск обработки данных ===
+2025-08-04 17:51:16,749 - INFO - === Проверка структуры проекта ===
+2025-08-04 17:51:16,749 - INFO - Найдено 56 SVG-файлов в data/raw/
+2025-08-04 17:51:16,749 - INFO - Примеры файлов: ['10-24-ИОС1.1-ЭОМ_removed-27.svg', '10-24-ИОС1.1-ЭОМ_removed-33.svg', '10-24-ИОС1.1-ЭОМ_removed-32.svg']
+2025-08-04 17:51:16,754 - INFO - === Проверка структуры проекта ===
+2025-08-04 17:51:16,754 - INFO - Найдено 56 SVG-файлов в data/raw/
+2025-08-04 17:51:16,754 - INFO - Примеры файлов: ['10-24-ИОС1.1-ЭОМ_removed-27.svg', '10-24-ИОС1.1-ЭОМ_removed-33.svg', '10-24-ИОС1.1-ЭОМ_removed-32.svg']
+2025-08-04 17:51:16,754 - INFO - Начало обработки 56 схем...
+2025-08-04 17:51:16,780 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-27.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,787 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-33.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,793 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-32.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,802 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-26.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,806 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-18.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,813 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-30.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,824 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-24.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,832 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-25.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,839 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-31.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,843 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-19.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,851 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-35.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,858 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-21.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,867 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-09.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,875 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-08.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,878 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-20.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,885 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-34.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,893 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-22.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,899 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-36.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,905 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-37.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,915 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-23.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,920 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-44.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,926 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-50.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,929 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-51.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,935 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-45.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,939 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-53.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,945 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-47.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,951 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-46.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,954 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-52.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,958 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-56.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,963 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-42.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,968 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-43.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,974 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-41.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,978 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-55.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,982 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-54.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,988 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-40.svg: name 'datetime' is not defined
+2025-08-04 17:51:16,994 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-48.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,000 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-49.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,006 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-06.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,012 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-12.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,018 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-13.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,028 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-07.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,036 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-39.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,042 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-11.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,046 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-05.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,050 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-04.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,056 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-10.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,063 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-38.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,069 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-14.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,078 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-28.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,086 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-29.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,105 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-01.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,111 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-15.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,115 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-03.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,121 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-17.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,127 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-16.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,152 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-02.svg: name 'datetime' is not defined
+2025-08-04 17:51:17,152 - INFO - Успешно обработано 0/56 схем
+2025-08-04 17:51:17,153 - INFO - Результаты сохранены в: /Users/tejmurmamedov/Documents/network_GraphSAGE/data/processed
+2025-08-04 17:51:17,153 - INFO - Обработка завершена успешно!
+2025-08-04 17:52:00,457 - INFO - === Запуск обработки данных ===
+2025-08-04 17:52:00,457 - INFO - === Проверка структуры проекта ===
+2025-08-04 17:52:00,457 - INFO - Найдено 56 SVG-файлов в data/raw/
+2025-08-04 17:52:00,458 - INFO - Примеры файлов: ['10-24-ИОС1.1-ЭОМ_removed-27.svg', '10-24-ИОС1.1-ЭОМ_removed-33.svg', '10-24-ИОС1.1-ЭОМ_removed-32.svg']
+2025-08-04 17:52:00,462 - INFO - === Проверка структуры проекта ===
+2025-08-04 17:52:00,462 - INFO - Найдено 56 SVG-файлов в data/raw/
+2025-08-04 17:52:00,463 - INFO - Примеры файлов: ['10-24-ИОС1.1-ЭОМ_removed-27.svg', '10-24-ИОС1.1-ЭОМ_removed-33.svg', '10-24-ИОС1.1-ЭОМ_removed-32.svg']
+2025-08-04 17:52:00,463 - INFO - Начало обработки 56 схем...
+2025-08-04 17:52:00,485 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-27.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,492 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-33.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,499 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-32.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,507 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-26.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,511 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-18.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,518 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-30.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,529 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-24.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,537 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-25.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,544 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-31.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,548 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-19.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,556 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-35.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,563 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-21.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,572 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-09.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,580 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-08.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,583 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-20.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,589 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-34.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,597 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-22.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,604 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-36.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,609 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-37.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,619 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-23.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,625 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-44.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,631 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-50.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,634 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-51.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,639 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-45.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,644 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-53.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,649 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-47.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,655 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-46.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,658 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-52.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,662 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-56.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,667 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-42.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,672 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-43.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,678 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-41.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,682 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-55.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,687 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-54.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,693 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-40.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,698 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-48.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,704 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-49.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,711 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-06.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,716 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-12.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,722 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-13.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,731 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-07.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,738 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-39.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,744 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-11.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,748 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-05.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,753 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-04.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,758 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-10.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,765 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-38.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,771 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-14.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,780 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-28.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,789 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-29.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,807 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-01.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,814 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-15.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,818 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-03.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,823 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-17.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,829 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-16.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,855 - ERROR - Ошибка обработки 10-24-ИОС1.1-ЭОМ_removed-02.svg: name 'datetime' is not defined
+2025-08-04 17:52:00,855 - INFO - Успешно обработано 0/56 схем
+2025-08-04 17:52:00,855 - INFO - Результаты сохранены в: /Users/tejmurmamedov/Documents/network_GraphSAGE/data/processed
+2025-08-04 17:52:00,855 - INFO - Обработка завершена успешно!

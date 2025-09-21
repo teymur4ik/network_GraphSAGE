@@ -32,13 +32,32 @@ class SchemeErrorDetector:
         model.load_state_dict(torch.load(model_path))
         model.eval()
         return model
-    
+
     def _convert_to_pyg_data(self, graph_dict: Dict) -> Data:
         """Конвертация графа в формат PyTorch Geometric"""
-        # Реализация конвертации
-        pass
-    
+        from torch_geometric.utils import from_networkx
+        import networkx as nx
+
+        G = nx.Graph()
+        for node in graph_dict['nodes']:
+            G.add_node(node['id'], **node)
+        
+        for edge in graph_dict['edges']:
+            G.add_edge(edge['from'], edge['to'], **edge)
+        
+        # Преобразование в Data
+        pyg_data = from_networkx(G)
+        pyg_data.x = torch.tensor([node['features'] for node in graph_dict['nodes']], dtype=torch.float)
+        pyg_data.edge_index = torch.tensor([[edge['from'], edge['to']] for edge in graph_dict['edges']], dtype=torch.long).t().contiguous()
+        return pyg_data
+
     def _analyze_predictions(self, predictions: torch.Tensor, graph: Dict) -> Dict:
-        """Анализ предсказаний и формирование отчета об ошибках"""
-        # Реализация анализа
-        pass
+        """Анализ предсказаний (пример: поиск подозрительных узлов)"""
+        errors = {}
+        for i, (node, pred) in enumerate(zip(graph['nodes'], predictions)):
+            if pred.item() > 0.5:  # Порог для ошибки
+                errors[node['id']] = {
+                    'type': node['type'],
+                    'confidence': float(pred.item())
+                }
+        return {'errors': errors}
